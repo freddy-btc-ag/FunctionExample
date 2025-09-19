@@ -1,18 +1,6 @@
-const nameInputElement = document.getElementById('name');
-
-if (nameInputElement) {
-    nameInputElement.addEventListener("change", handleChange)
-}
-
 function handleChange() {
     const nameInputElement = document.getElementById('name') as HTMLInputElement;
     console.log(`Change Event ${nameInputElement.value}`)
-}
-
-const plusButton = document.getElementById('plus');
-
-if (plusButton) {
-    plusButton.addEventListener("click", handleClick)
 }
 
 function handleClick() {
@@ -26,4 +14,5 @@ function handleClick() {
 
     const resultElement = document.getElementById('numberThree') as HTMLInputElement;
     resultElement.setAttribute('value', String(result));
+
 }
