@@ -1,8 +1,27 @@
 <html lang="de">
-    <header></header>
-    <body>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value="name..." onchange="handleChange()"><br>
-    </body>
-    <script src="../dist/index.js"></script>
+<head>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<h1> Function Example</h1>
+<div id="name-input">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value="name..." onchange="handleChange()"><br>
+</div>
+<div    id="calculator">
+    <label for="numberOne">Zahl 1: </label><br>
+    <input type="number" id="numberOne" name="numberOne" value="0"><br>
+
+    <label for="numberTwo">Zahl2:</label> <br>
+    <input type="number" id="numberTwo" name="numberTwo" value="0"><br>
+
+    <button id="plus" onclick="handleClick()">+</button>
+    <br>
+
+    <label for="numberThree">Ergebnis:</label><br>
+    <input disabled type="number" id="numberThree" name="numberTwo" value="0" onchange=""><br>
+</div>
+
+</body>
+<script src="../dist/index.js"></script>
 </html>
