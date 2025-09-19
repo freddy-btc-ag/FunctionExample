@@ -5,8 +5,8 @@ if (nameInputElement) {
 }
 
 function handleChange() {
-    const name = document.getElementById('name') as HTMLInputElement;
-    console.log(`Change Event ${name.value}`)
+    const nameInputElement = document.getElementById('name') as HTMLInputElement;
+    console.log(`Change Event ${nameInputElement.value}`)
 }
 
 const plusButton = document.getElementById('plus');
